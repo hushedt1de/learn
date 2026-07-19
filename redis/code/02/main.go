@@ -5,14 +5,15 @@ import (
 	"errors"
 	"fmt"
 	"log"
-	"redis-learn/utils"
+	"redis-learn/code/utils"
 	"time"
 
 	"github.com/redis/go-redis/v9"
 )
 
+// redis string 实战：文章阅读量计数器
+
 func main() {
-	// redis string 实战：文章阅读量计数器
 	ctx := context.Background()
 
 	cnt, err := GetArticleViewCount(ctx, 1)
